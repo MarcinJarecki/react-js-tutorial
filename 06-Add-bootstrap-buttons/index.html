@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--React -->
+	<script src="https://fb.me/react-with-addons-15.2.1.min.js"></script>
+	<script src="https://fb.me/react-dom-15.2.1.min.js"></script>
+	<!--Babel -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+    <!--Bootstrap Styles -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--Google fonts -->
+    <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"> 
+	<title>React app</title>
+</head>
+
+<body>	
+	<div id="app-container"></div>
+
+	<script type="text/babel">
+		var StickyNotes = React.createClass({
+			render: function() {
+				var deleteButtonStyle = {					
+					'float': 'right'
+				};
+
+				return (
+						<div className='note'>
+							<ul>							
+								<li>
+									<a href="#">
+										<button className="btn btn-xs btn-danger glyphicon glyphicon-remove" style={deleteButtonStyle}></button>
+										<h4>{this.props.title}</h4>
+										<textarea>{this.props.text}</textarea>
+									</a>
+								</li>
+							</ul>
+						</div>
+					)
+			}
+		});
+
+		ReactDOM.render(
+			<div className='board-container'>
+				<div id="menu-bar">
+					<button className="btn btn-lg btn-primary glyphicon glyphicon-plus pull-right"></button>
+				</div>
+				<div className='board'>
+					<StickyNotes title='Shopping list' text='Apple' />
+					<StickyNotes title='Lerning plan' text='React' />
+					<StickyNotes title='Exercises list' text='Running' />
+					<StickyNotes title='Other things' text='Nap' />
+				</div>
+			</div>
+			, document.getElementById('app-container'));
+	</script>
+
+	<footer>
+		footer
+	</footer>
+</body>
+</html>

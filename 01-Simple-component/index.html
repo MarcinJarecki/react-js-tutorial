@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://fb.me/react-with-addons-15.2.1.min.js"></script>
+	<script src="https://fb.me/react-dom-15.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+	<meta charset="UTF-8">
+	<title>React app</title>
+</head>
+
+<body>
+	<div id="app"></div>
+
+	<script type="text/babel">
+
+		var SimpleComponent = React.createClass({
+			render: function() {
+				return (<h3>This is simple reacj.js component</h3>)
+			}
+		});
+
+		ReactDOM.render(<SimpleComponent />, document.getElementById('app'));
+	</script>
+
+</body>
+</html>
