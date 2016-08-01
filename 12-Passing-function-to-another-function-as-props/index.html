@@ -21,7 +21,6 @@
 
 	<script type="text/babel">
 
-		
 		var MenuBar = React.createClass({
 
 			render : function(){
@@ -36,7 +35,6 @@
 		var NoteBoard = React.createClass({
 
 			getInitialState : function(){			
-
 				return {
 						notes : [
 							{
@@ -113,7 +111,7 @@
 									<a href="#">
 										<button onClick={this.remove} className="btn btn-xs btn-danger glyphicon glyphicon-trash" style={this.removeButtonStyle}> </button> 
 										<h4>{this.props.title}</h4>
-										<textarea defaultValue={this.props.text}></textarea>
+										<textarea defaultValue={this.props.text} oninput={this.props.updateText}></textarea>
 									</a>
 								</li>
 							</ul>						

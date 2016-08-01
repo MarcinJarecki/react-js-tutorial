@@ -18,7 +18,7 @@ React.js turtorial
 09. Create new components -> NoteBoard, MenuBar, Footer
 10. Add initial state of notes -> getInitialState function
 11. Use map function to call component
-12.
-13.
-14.
+12. Passing function to another function -> use props
+13. Add update textArea function -> use refs
+14. Add function to create empty Note -> call function with parametr - bind
 15. 
