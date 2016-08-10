@@ -1,6 +1,6 @@
 # react-js-tutorial 
 
-React.js turtorial
+React.js tutorial, without webpack
 
 ####Requirements:
 - Web browser: Chrome, Firefox 
