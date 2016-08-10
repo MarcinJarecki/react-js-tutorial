@@ -22,6 +22,5 @@ React.js turtorial
 13. Add update textArea function -> use refs
 14. Add function to create empty Note -> call function with parametr - bind
 15. Add checkbox, click when Note is done -> create new component NoteCheckBox - css style as component state
-16. Add button to change Note color
-17. 
-18. Add config to board -> route, link 
+16. Final App
+ 
